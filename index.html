@@ -11,12 +11,28 @@
             align-items: center;
             background: black;
             color: white;
-            font-size: 20vw;
             font-family: Arial, sans-serif;
+        }
+
+        #text {
+            font-size: 20vw;
+            opacity: 0;
+            transition: opacity 1.5s ease;
         }
     </style>
 </head>
 <body>
-    .l.
+
+<div id="text">...</div>
+
+<script>
+    const text = document.getElementById("text");
+
+    setTimeout(() => {
+        text.textContent = ".l.";
+        text.style.opacity = 1;
+    }, 2000); // tempo a "pensar"
+</script>
+
 </body>
 </html>
